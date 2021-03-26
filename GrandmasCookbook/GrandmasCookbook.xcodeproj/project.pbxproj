@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB2583C6238D8A9300C3381C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2583C5238D8A9300C3381C /* AppDelegate.swift */; };
+		AB2583C8238D8A9300C3381C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2583C7238D8A9300C3381C /* SceneDelegate.swift */; };
+		AB2583CA238D8A9300C3381C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2583C9238D8A9300C3381C /* ViewController.swift */; };
+		AB2583CD238D8A9300C3381C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2583CB238D8A9300C3381C /* Main.storyboard */; };
+		AB2583D0238D8A9300C3381C /* GrandmasCookbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB2583CE238D8A9300C3381C /* GrandmasCookbook.xcdatamodeld */; };
+		AB2583D2238D8A9300C3381C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2583D1238D8A9300C3381C /* Assets.xcassets */; };
+		AB2583D5238D8A9300C3381C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2583D3238D8A9300C3381C /* LaunchScreen.storyboard */; };
+		AB2583E0238D8A9300C3381C /* GrandmasCookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2583DF238D8A9300C3381C /* GrandmasCookbookTests.swift */; };
+		AB2583EB238D8A9300C3381C /* GrandmasCookbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2583EA238D8A9300C3381C /* GrandmasCookbookUITests.swift */; };
+		AB2583F9238DA9D200C3381C /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2583F8238DA9D200C3381C /* SelectionViewController.swift */; };
+		AB2FC66823A92C4000774C89 /* cake-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2FC66723A92C3F00774C89 /* cake-icon.png */; };
+		AB471C9E23A82E450017B190 /* al dente.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471C9D23A82E450017B190 /* al dente.jpg */; };
+		AB471CA023A82E5A0017B190 /* bake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471C9F23A82E5A0017B190 /* bake.jpg */; };
+		AB471CA223A82E670017B190 /* baste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CA123A82E670017B190 /* baste.jpg */; };
+		AB471CA423A82E780017B190 /* batter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CA323A82E780017B190 /* batter.jpg */; };
+		AB471CA623A82EA60017B190 /* beat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CA523A82EA60017B190 /* beat.jpg */; };
+		AB471CA823A82EC00017B190 /* blend.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CA723A82EC00017B190 /* blend.jpg */; };
+		AB471CAA23A82ECA0017B190 /* caramelize.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CA923A82EC90017B190 /* caramelize.jpg */; };
+		AB471CAC23A82EDE0017B190 /* chop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CAB23A82EDE0017B190 /* chop.jpg */; };
+		AB471CAE23A82EE80017B190 /* clarify.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CAD23A82EE80017B190 /* clarify.jpg */; };
+		AB471CB023A82EF50017B190 /* cream.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CAF23A82EF50017B190 /* cream.jpg */; };
+		AB471CB223A82F020017B190 /* cure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CB123A82F020017B190 /* cure.jpg */; };
+		AB471CB423A82F4A0017B190 /* dice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CB323A82F4A0017B190 /* dice.jpg */; };
+		AB471CB623A82F6C0017B190 /* dissolve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CB523A82F6C0017B190 /* dissolve.jpg */; };
+		AB471CB823A82F810017B190 /* dredge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CB723A82F810017B190 /* dredge.jpg */; };
+		AB471CBA23A82F8E0017B190 /* drizzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CB923A82F8E0017B190 /* drizzle.jpg */; };
+		AB471CBD23A82FCC0017B190 /* dust.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CBC23A82FCC0017B190 /* dust.jpg */; };
+		AB471CBF23A82FDA0017B190 /* fillet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CBE23A82FDA0017B190 /* fillet.jpg */; };
+		AB471CC123A82FF30017B190 /* flake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CC023A82FF20017B190 /* flake.jpg */; };
+		AB471CC323A830010017B190 /* fold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CC223A830010017B190 /* fold.jpg */; };
+		AB471CC723A8306A0017B190 /* glaze.png in Resources */ = {isa = PBXBuildFile; fileRef = AB471CC423A830690017B190 /* glaze.png */; };
+		AB471CC823A8306A0017B190 /* garnish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CC523A830690017B190 /* garnish.jpg */; };
+		AB471CC923A8306A0017B190 /* fry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CC623A830690017B190 /* fry.jpg */; };
+		AB471CCD23A8308E0017B190 /* gratin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CCA23A8308D0017B190 /* gratin.jpg */; };
+		AB471CCE23A8308E0017B190 /* grind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CCB23A8308D0017B190 /* grind.jpg */; };
+		AB471CCF23A8308E0017B190 /* grill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CCC23A8308D0017B190 /* grill.jpg */; };
+		AB471CD223A830990017B190 /* knead.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CD023A830990017B190 /* knead.jpg */; };
+		AB471CD323A830990017B190 /* julienne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CD123A830990017B190 /* julienne.jpg */; };
+		AB471CDB23A830AC0017B190 /* meuniere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CD423A830AB0017B190 /* meuniere.jpg */; };
+		AB471CDC23A830AC0017B190 /* pare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CD523A830AB0017B190 /* pare.jpg */; };
+		AB471CDD23A830AC0017B190 /* lukewarm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CD623A830AB0017B190 /* lukewarm.jpg */; };
+		AB471CDE23A830AC0017B190 /* peel.jp2 in Resources */ = {isa = PBXBuildFile; fileRef = AB471CD723A830AB0017B190 /* peel.jp2 */; };
+		AB471CDF23A830AC0017B190 /* mix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CD823A830AC0017B190 /* mix.jpg */; };
+		AB471CE023A830AC0017B190 /* marinate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CD923A830AC0017B190 /* marinate.jpg */; };
+		AB471CE123A830AC0017B190 /* mince.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CDA23A830AC0017B190 /* mince.jpg */; };
+		AB471CEE23A830C00017B190 /* saute.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CE223A830BD0017B190 /* saute.jpg */; };
+		AB471CEF23A830C00017B190 /* pickle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CE323A830BD0017B190 /* pickle.jpg */; };
+		AB471CF023A830C00017B190 /* simmer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CE423A830BE0017B190 /* simmer.jpg */; };
+		AB471CF123A830C00017B190 /* reduce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CE523A830BE0017B190 /* reduce.jpg */; };
+		AB471CF223A830C00017B190 /* render.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CE623A830BE0017B190 /* render.jpg */; };
+		AB471CF323A830C00017B190 /* shred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CE723A830BE0017B190 /* shred.jpg */; };
+		AB471CF423A830C00017B190 /* poach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CE823A830BE0017B190 /* poach.jpeg */; };
+		AB471CF523A830C00017B190 /* Stew.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CE923A830BF0017B190 /* Stew.jpg */; };
+		AB471CF623A830C00017B190 /* Stir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CEA23A830BF0017B190 /* Stir.jpg */; };
+		AB471CF723A830C00017B190 /* puree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CEB23A830BF0017B190 /* puree.jpg */; };
+		AB471CF823A830C00017B190 /* refresh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CEC23A830BF0017B190 /* refresh.jpg */; };
+		AB471CF923A830C00017B190 /* roast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CED23A830BF0017B190 /* roast.jpg */; };
+		AB471CFD23A830CC0017B190 /* Toss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CFA23A830CC0017B190 /* Toss.jpg */; };
+		AB471CFE23A830CC0017B190 /* truss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CFB23A830CC0017B190 /* truss.jpg */; };
+		AB471CFF23A830CC0017B190 /* whip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471CFC23A830CC0017B190 /* whip.jpg */; };
+		AB471D0123A832670017B190 /* grate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471D0023A832670017B190 /* grate.jpg */; };
+		AB471D0323A833A70017B190 /* peel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB471D0223A833A60017B190 /* peel.jpg */; };
+		AB471D0523A834DC0017B190 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB471D0423A834DC0017B190 /* SkillsViewController.swift */; };
+		AB471D0723A83E330017B190 /* Kitchen-Conversions_png.png in Resources */ = {isa = PBXBuildFile; fileRef = AB471D0623A83E330017B190 /* Kitchen-Conversions_png.png */; };
+		AB69BFF823A0492B009DFB73 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69BFF723A0492B009DFB73 /* RecipesViewController.swift */; };
+		AB8D3ED3239990B500667E2E /* GrandmasRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D3ED2239990B500667E2E /* GrandmasRecipes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB2583DC238D8A9300C3381C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2583BA238D8A9300C3381C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2583C1238D8A9300C3381C;
+			remoteInfo = GrandmasCookbook;
+		};
+		AB2583E7238D8A9300C3381C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2583BA238D8A9300C3381C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2583C1238D8A9300C3381C;
+			remoteInfo = GrandmasCookbook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB2583C2238D8A9300C3381C /* GrandmasCookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandmasCookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2583C5238D8A9300C3381C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB2583C7238D8A9300C3381C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB2583C9238D8A9300C3381C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB2583CC238D8A9300C3381C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB2583CF238D8A9300C3381C /* GrandmasCookbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GrandmasCookbook.xcdatamodel; sourceTree = "<group>"; };
+		AB2583D1238D8A9300C3381C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB2583D4238D8A9300C3381C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB2583D6238D8A9300C3381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2583DB238D8A9300C3381C /* GrandmasCookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandmasCookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2583DF238D8A9300C3381C /* GrandmasCookbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandmasCookbookTests.swift; sourceTree = "<group>"; };
+		AB2583E1238D8A9300C3381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2583E6238D8A9300C3381C /* GrandmasCookbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandmasCookbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2583EA238D8A9300C3381C /* GrandmasCookbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandmasCookbookUITests.swift; sourceTree = "<group>"; };
+		AB2583EC238D8A9300C3381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2583F8238DA9D200C3381C /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		AB2FC66723A92C3F00774C89 /* cake-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cake-icon.png"; path = "../../cake-icon.png"; sourceTree = "<group>"; };
+		AB471C9D23A82E450017B190 /* al dente.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "al dente.jpg"; sourceTree = "<group>"; };
+		AB471C9F23A82E5A0017B190 /* bake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bake.jpg; sourceTree = "<group>"; };
+		AB471CA123A82E670017B190 /* baste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baste.jpg; sourceTree = "<group>"; };
+		AB471CA323A82E780017B190 /* batter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batter.jpg; sourceTree = "<group>"; };
+		AB471CA523A82EA60017B190 /* beat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beat.jpg; sourceTree = "<group>"; };
+		AB471CA723A82EC00017B190 /* blend.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blend.jpg; sourceTree = "<group>"; };
+		AB471CA923A82EC90017B190 /* caramelize.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caramelize.jpg; sourceTree = "<group>"; };
+		AB471CAB23A82EDE0017B190 /* chop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chop.jpg; sourceTree = "<group>"; };
+		AB471CAD23A82EE80017B190 /* clarify.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clarify.jpg; sourceTree = "<group>"; };
+		AB471CAF23A82EF50017B190 /* cream.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cream.jpg; sourceTree = "<group>"; };
+		AB471CB123A82F020017B190 /* cure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cure.jpg; sourceTree = "<group>"; };
+		AB471CB323A82F4A0017B190 /* dice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dice.jpg; sourceTree = "<group>"; };
+		AB471CB523A82F6C0017B190 /* dissolve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dissolve.jpg; sourceTree = "<group>"; };
+		AB471CB723A82F810017B190 /* dredge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dredge.jpg; sourceTree = "<group>"; };
+		AB471CB923A82F8E0017B190 /* drizzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drizzle.jpg; sourceTree = "<group>"; };
+		AB471CBC23A82FCC0017B190 /* dust.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dust.jpg; sourceTree = "<group>"; };
+		AB471CBE23A82FDA0017B190 /* fillet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fillet.jpg; sourceTree = "<group>"; };
+		AB471CC023A82FF20017B190 /* flake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flake.jpg; sourceTree = "<group>"; };
+		AB471CC223A830010017B190 /* fold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fold.jpg; sourceTree = "<group>"; };
+		AB471CC423A830690017B190 /* glaze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glaze.png; sourceTree = "<group>"; };
+		AB471CC523A830690017B190 /* garnish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = garnish.jpg; sourceTree = "<group>"; };
+		AB471CC623A830690017B190 /* fry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fry.jpg; sourceTree = "<group>"; };
+		AB471CCA23A8308D0017B190 /* gratin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gratin.jpg; sourceTree = "<group>"; };
+		AB471CCB23A8308D0017B190 /* grind.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grind.jpg; sourceTree = "<group>"; };
+		AB471CCC23A8308D0017B190 /* grill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grill.jpg; sourceTree = "<group>"; };
+		AB471CD023A830990017B190 /* knead.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = knead.jpg; sourceTree = "<group>"; };
+		AB471CD123A830990017B190 /* julienne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = julienne.jpg; sourceTree = "<group>"; };
+		AB471CD423A830AB0017B190 /* meuniere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meuniere.jpg; sourceTree = "<group>"; };
+		AB471CD523A830AB0017B190 /* pare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pare.jpg; sourceTree = "<group>"; };
+		AB471CD623A830AB0017B190 /* lukewarm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lukewarm.jpg; sourceTree = "<group>"; };
+		AB471CD723A830AB0017B190 /* peel.jp2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = peel.jp2; sourceTree = "<group>"; };
+		AB471CD823A830AC0017B190 /* mix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mix.jpg; sourceTree = "<group>"; };
+		AB471CD923A830AC0017B190 /* marinate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marinate.jpg; sourceTree = "<group>"; };
+		AB471CDA23A830AC0017B190 /* mince.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mince.jpg; sourceTree = "<group>"; };
+		AB471CE223A830BD0017B190 /* saute.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saute.jpg; sourceTree = "<group>"; };
+		AB471CE323A830BD0017B190 /* pickle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pickle.jpg; sourceTree = "<group>"; };
+		AB471CE423A830BE0017B190 /* simmer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = simmer.jpg; sourceTree = "<group>"; };
+		AB471CE523A830BE0017B190 /* reduce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reduce.jpg; sourceTree = "<group>"; };
+		AB471CE623A830BE0017B190 /* render.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = render.jpg; sourceTree = "<group>"; };
+		AB471CE723A830BE0017B190 /* shred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shred.jpg; sourceTree = "<group>"; };
+		AB471CE823A830BE0017B190 /* poach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = poach.jpeg; sourceTree = "<group>"; };
+		AB471CE923A830BF0017B190 /* Stew.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stew.jpg; sourceTree = "<group>"; };
+		AB471CEA23A830BF0017B190 /* Stir.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stir.jpg; sourceTree = "<group>"; };
+		AB471CEB23A830BF0017B190 /* puree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puree.jpg; sourceTree = "<group>"; };
+		AB471CEC23A830BF0017B190 /* refresh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = refresh.jpg; sourceTree = "<group>"; };
+		AB471CED23A830BF0017B190 /* roast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roast.jpg; sourceTree = "<group>"; };
+		AB471CFA23A830CC0017B190 /* Toss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Toss.jpg; sourceTree = "<group>"; };
+		AB471CFB23A830CC0017B190 /* truss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = truss.jpg; sourceTree = "<group>"; };
+		AB471CFC23A830CC0017B190 /* whip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whip.jpg; sourceTree = "<group>"; };
+		AB471D0023A832670017B190 /* grate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grate.jpg; sourceTree = "<group>"; };
+		AB471D0223A833A60017B190 /* peel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peel.jpg; sourceTree = "<group>"; };
+		AB471D0423A834DC0017B190 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		AB471D0623A83E330017B190 /* Kitchen-Conversions_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kitchen-Conversions_png.png"; sourceTree = "<group>"; };
+		AB69BFF723A0492B009DFB73 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		AB8D3ED2239990B500667E2E /* GrandmasRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandmasRecipes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB2583BF238D8A9300C3381C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2583D8238D8A9300C3381C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2583E3238D8A9300C3381C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB2583B9238D8A9300C3381C = {
+			isa = PBXGroup;
+			children = (
+				AB2583C4238D8A9300C3381C /* GrandmasCookbook */,
+				AB2583DE238D8A9300C3381C /* GrandmasCookbookTests */,
+				AB2583E9238D8A9300C3381C /* GrandmasCookbookUITests */,
+				AB2583C3238D8A9300C3381C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB2583C3238D8A9300C3381C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB2583C2238D8A9300C3381C /* GrandmasCookbook.app */,
+				AB2583DB238D8A9300C3381C /* GrandmasCookbookTests.xctest */,
+				AB2583E6238D8A9300C3381C /* GrandmasCookbookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB2583C4238D8A9300C3381C /* GrandmasCookbook */ = {
+			isa = PBXGroup;
+			children = (
+				AB2FC66723A92C3F00774C89 /* cake-icon.png */,
+				AB471CBB23A82FA70017B190 /* pictures */,
+				AB2583C5238D8A9300C3381C /* AppDelegate.swift */,
+				AB2583C7238D8A9300C3381C /* SceneDelegate.swift */,
+				AB2583C9238D8A9300C3381C /* ViewController.swift */,
+				AB2583CB238D8A9300C3381C /* Main.storyboard */,
+				AB2583D1238D8A9300C3381C /* Assets.xcassets */,
+				AB2583D3238D8A9300C3381C /* LaunchScreen.storyboard */,
+				AB2583D6238D8A9300C3381C /* Info.plist */,
+				AB2583CE238D8A9300C3381C /* GrandmasCookbook.xcdatamodeld */,
+				AB2583F8238DA9D200C3381C /* SelectionViewController.swift */,
+				AB8D3ED2239990B500667E2E /* GrandmasRecipes.swift */,
+				AB69BFF723A0492B009DFB73 /* RecipesViewController.swift */,
+				AB471D0423A834DC0017B190 /* SkillsViewController.swift */,
+			);
+			path = GrandmasCookbook;
+			sourceTree = "<group>";
+		};
+		AB2583DE238D8A9300C3381C /* GrandmasCookbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2583DF238D8A9300C3381C /* GrandmasCookbookTests.swift */,
+				AB2583E1238D8A9300C3381C /* Info.plist */,
+			);
+			path = GrandmasCookbookTests;
+			sourceTree = "<group>";
+		};
+		AB2583E9238D8A9300C3381C /* GrandmasCookbookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2583EA238D8A9300C3381C /* GrandmasCookbookUITests.swift */,
+				AB2583EC238D8A9300C3381C /* Info.plist */,
+			);
+			path = GrandmasCookbookUITests;
+			sourceTree = "<group>";
+		};
+		AB471CBB23A82FA70017B190 /* pictures */ = {
+			isa = PBXGroup;
+			children = (
+				AB471D0623A83E330017B190 /* Kitchen-Conversions_png.png */,
+				AB471D0223A833A60017B190 /* peel.jpg */,
+				AB471D0023A832670017B190 /* grate.jpg */,
+				AB471CFA23A830CC0017B190 /* Toss.jpg */,
+				AB471CFB23A830CC0017B190 /* truss.jpg */,
+				AB471CFC23A830CC0017B190 /* whip.jpg */,
+				AB471CE323A830BD0017B190 /* pickle.jpg */,
+				AB471CE823A830BE0017B190 /* poach.jpeg */,
+				AB471CEB23A830BF0017B190 /* puree.jpg */,
+				AB471CE523A830BE0017B190 /* reduce.jpg */,
+				AB471CEC23A830BF0017B190 /* refresh.jpg */,
+				AB471CE623A830BE0017B190 /* render.jpg */,
+				AB471CED23A830BF0017B190 /* roast.jpg */,
+				AB471CE223A830BD0017B190 /* saute.jpg */,
+				AB471CE723A830BE0017B190 /* shred.jpg */,
+				AB471CE423A830BE0017B190 /* simmer.jpg */,
+				AB471CE923A830BF0017B190 /* Stew.jpg */,
+				AB471CEA23A830BF0017B190 /* Stir.jpg */,
+				AB471CD623A830AB0017B190 /* lukewarm.jpg */,
+				AB471CD923A830AC0017B190 /* marinate.jpg */,
+				AB471CD423A830AB0017B190 /* meuniere.jpg */,
+				AB471CDA23A830AC0017B190 /* mince.jpg */,
+				AB471CD823A830AC0017B190 /* mix.jpg */,
+				AB471CD523A830AB0017B190 /* pare.jpg */,
+				AB471CD723A830AB0017B190 /* peel.jp2 */,
+				AB471CD123A830990017B190 /* julienne.jpg */,
+				AB471CD023A830990017B190 /* knead.jpg */,
+				AB471CCA23A8308D0017B190 /* gratin.jpg */,
+				AB471CCC23A8308D0017B190 /* grill.jpg */,
+				AB471CCB23A8308D0017B190 /* grind.jpg */,
+				AB471CC623A830690017B190 /* fry.jpg */,
+				AB471CC523A830690017B190 /* garnish.jpg */,
+				AB471CC423A830690017B190 /* glaze.png */,
+				AB471CC023A82FF20017B190 /* flake.jpg */,
+				AB471CBE23A82FDA0017B190 /* fillet.jpg */,
+				AB471CBC23A82FCC0017B190 /* dust.jpg */,
+				AB471CB923A82F8E0017B190 /* drizzle.jpg */,
+				AB471CB723A82F810017B190 /* dredge.jpg */,
+				AB471CB523A82F6C0017B190 /* dissolve.jpg */,
+				AB471CB323A82F4A0017B190 /* dice.jpg */,
+				AB471CB123A82F020017B190 /* cure.jpg */,
+				AB471CAF23A82EF50017B190 /* cream.jpg */,
+				AB471CAD23A82EE80017B190 /* clarify.jpg */,
+				AB471CAB23A82EDE0017B190 /* chop.jpg */,
+				AB471CA923A82EC90017B190 /* caramelize.jpg */,
+				AB471CA723A82EC00017B190 /* blend.jpg */,
+				AB471CA523A82EA60017B190 /* beat.jpg */,
+				AB471CC223A830010017B190 /* fold.jpg */,
+				AB471CA323A82E780017B190 /* batter.jpg */,
+				AB471CA123A82E670017B190 /* baste.jpg */,
+				AB471C9F23A82E5A0017B190 /* bake.jpg */,
+				AB471C9D23A82E450017B190 /* al dente.jpg */,
+			);
+			path = pictures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB2583C1238D8A9300C3381C /* GrandmasCookbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2583EF238D8A9300C3381C /* Build configuration list for PBXNativeTarget "GrandmasCookbook" */;
+			buildPhases = (
+				AB2583BE238D8A9300C3381C /* Sources */,
+				AB2583BF238D8A9300C3381C /* Frameworks */,
+				AB2583C0238D8A9300C3381C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrandmasCookbook;
+			productName = GrandmasCookbook;
+			productReference = AB2583C2238D8A9300C3381C /* GrandmasCookbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB2583DA238D8A9300C3381C /* GrandmasCookbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2583F2238D8A9300C3381C /* Build configuration list for PBXNativeTarget "GrandmasCookbookTests" */;
+			buildPhases = (
+				AB2583D7238D8A9300C3381C /* Sources */,
+				AB2583D8238D8A9300C3381C /* Frameworks */,
+				AB2583D9238D8A9300C3381C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2583DD238D8A9300C3381C /* PBXTargetDependency */,
+			);
+			name = GrandmasCookbookTests;
+			productName = GrandmasCookbookTests;
+			productReference = AB2583DB238D8A9300C3381C /* GrandmasCookbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB2583E5238D8A9300C3381C /* GrandmasCookbookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2583F5238D8A9300C3381C /* Build configuration list for PBXNativeTarget "GrandmasCookbookUITests" */;
+			buildPhases = (
+				AB2583E2238D8A9300C3381C /* Sources */,
+				AB2583E3238D8A9300C3381C /* Frameworks */,
+				AB2583E4238D8A9300C3381C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2583E8238D8A9300C3381C /* PBXTargetDependency */,
+			);
+			name = GrandmasCookbookUITests;
+			productName = GrandmasCookbookUITests;
+			productReference = AB2583E6238D8A9300C3381C /* GrandmasCookbookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB2583BA238D8A9300C3381C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Shaw, Aly";
+				TargetAttributes = {
+					AB2583C1238D8A9300C3381C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					AB2583DA238D8A9300C3381C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = AB2583C1238D8A9300C3381C;
+					};
+					AB2583E5238D8A9300C3381C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = AB2583C1238D8A9300C3381C;
+					};
+				};
+			};
+			buildConfigurationList = AB2583BD238D8A9300C3381C /* Build configuration list for PBXProject "GrandmasCookbook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB2583B9238D8A9300C3381C;
+			productRefGroup = AB2583C3238D8A9300C3381C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB2583C1238D8A9300C3381C /* GrandmasCookbook */,
+				AB2583DA238D8A9300C3381C /* GrandmasCookbookTests */,
+				AB2583E5238D8A9300C3381C /* GrandmasCookbookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB2583C0238D8A9300C3381C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB471CF723A830C00017B190 /* puree.jpg in Resources */,
+				AB471C9E23A82E450017B190 /* al dente.jpg in Resources */,
+				AB471CE123A830AC0017B190 /* mince.jpg in Resources */,
+				AB471CF523A830C00017B190 /* Stew.jpg in Resources */,
+				AB471CB423A82F4A0017B190 /* dice.jpg in Resources */,
+				AB471CFE23A830CC0017B190 /* truss.jpg in Resources */,
+				AB471CA023A82E5A0017B190 /* bake.jpg in Resources */,
+				AB471D0123A832670017B190 /* grate.jpg in Resources */,
+				AB471CEE23A830C00017B190 /* saute.jpg in Resources */,
+				AB471CD323A830990017B190 /* julienne.jpg in Resources */,
+				AB471CDE23A830AC0017B190 /* peel.jp2 in Resources */,
+				AB471CDF23A830AC0017B190 /* mix.jpg in Resources */,
+				AB471CAA23A82ECA0017B190 /* caramelize.jpg in Resources */,
+				AB471CB623A82F6C0017B190 /* dissolve.jpg in Resources */,
+				AB471CB023A82EF50017B190 /* cream.jpg in Resources */,
+				AB471CC323A830010017B190 /* fold.jpg in Resources */,
+				AB471CBA23A82F8E0017B190 /* drizzle.jpg in Resources */,
+				AB471CBD23A82FCC0017B190 /* dust.jpg in Resources */,
+				AB2FC66823A92C4000774C89 /* cake-icon.png in Resources */,
+				AB471CE023A830AC0017B190 /* marinate.jpg in Resources */,
+				AB471CA823A82EC00017B190 /* blend.jpg in Resources */,
+				AB471CFF23A830CC0017B190 /* whip.jpg in Resources */,
+				AB471CDD23A830AC0017B190 /* lukewarm.jpg in Resources */,
+				AB471CF223A830C00017B190 /* render.jpg in Resources */,
+				AB471CAE23A82EE80017B190 /* clarify.jpg in Resources */,
+				AB471CF323A830C00017B190 /* shred.jpg in Resources */,
+				AB471CF623A830C00017B190 /* Stir.jpg in Resources */,
+				AB471CAC23A82EDE0017B190 /* chop.jpg in Resources */,
+				AB471CCE23A8308E0017B190 /* grind.jpg in Resources */,
+				AB471CF923A830C00017B190 /* roast.jpg in Resources */,
+				AB471CF823A830C00017B190 /* refresh.jpg in Resources */,
+				AB471CA423A82E780017B190 /* batter.jpg in Resources */,
+				AB471CB223A82F020017B190 /* cure.jpg in Resources */,
+				AB471CA623A82EA60017B190 /* beat.jpg in Resources */,
+				AB471CF423A830C00017B190 /* poach.jpeg in Resources */,
+				AB2583D5238D8A9300C3381C /* LaunchScreen.storyboard in Resources */,
+				AB471CFD23A830CC0017B190 /* Toss.jpg in Resources */,
+				AB471CC123A82FF30017B190 /* flake.jpg in Resources */,
+				AB471CA223A82E670017B190 /* baste.jpg in Resources */,
+				AB2583D2238D8A9300C3381C /* Assets.xcassets in Resources */,
+				AB471CBF23A82FDA0017B190 /* fillet.jpg in Resources */,
+				AB471CD223A830990017B190 /* knead.jpg in Resources */,
+				AB471CC723A8306A0017B190 /* glaze.png in Resources */,
+				AB471CDB23A830AC0017B190 /* meuniere.jpg in Resources */,
+				AB471D0723A83E330017B190 /* Kitchen-Conversions_png.png in Resources */,
+				AB2583CD238D8A9300C3381C /* Main.storyboard in Resources */,
+				AB471CF123A830C00017B190 /* reduce.jpg in Resources */,
+				AB471CC823A8306A0017B190 /* garnish.jpg in Resources */,
+				AB471CB823A82F810017B190 /* dredge.jpg in Resources */,
+				AB471CCD23A8308E0017B190 /* gratin.jpg in Resources */,
+				AB471CCF23A8308E0017B190 /* grill.jpg in Resources */,
+				AB471D0323A833A70017B190 /* peel.jpg in Resources */,
+				AB471CC923A8306A0017B190 /* fry.jpg in Resources */,
+				AB471CEF23A830C00017B190 /* pickle.jpg in Resources */,
+				AB471CF023A830C00017B190 /* simmer.jpg in Resources */,
+				AB471CDC23A830AC0017B190 /* pare.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2583D9238D8A9300C3381C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2583E4238D8A9300C3381C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2583BE238D8A9300C3381C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2583F9238DA9D200C3381C /* SelectionViewController.swift in Sources */,
+				AB69BFF823A0492B009DFB73 /* RecipesViewController.swift in Sources */,
+				AB2583CA238D8A9300C3381C /* ViewController.swift in Sources */,
+				AB8D3ED3239990B500667E2E /* GrandmasRecipes.swift in Sources */,
+				AB2583D0238D8A9300C3381C /* GrandmasCookbook.xcdatamodeld in Sources */,
+				AB2583C6238D8A9300C3381C /* AppDelegate.swift in Sources */,
+				AB471D0523A834DC0017B190 /* SkillsViewController.swift in Sources */,
+				AB2583C8238D8A9300C3381C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2583D7238D8A9300C3381C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2583E0238D8A9300C3381C /* GrandmasCookbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2583E2238D8A9300C3381C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2583EB238D8A9300C3381C /* GrandmasCookbookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB2583DD238D8A9300C3381C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2583C1238D8A9300C3381C /* GrandmasCookbook */;
+			targetProxy = AB2583DC238D8A9300C3381C /* PBXContainerItemProxy */;
+		};
+		AB2583E8238D8A9300C3381C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2583C1238D8A9300C3381C /* GrandmasCookbook */;
+			targetProxy = AB2583E7238D8A9300C3381C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB2583CB238D8A9300C3381C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2583CC238D8A9300C3381C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB2583D3238D8A9300C3381C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2583D4238D8A9300C3381C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB2583ED238D8A9300C3381C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB2583EE238D8A9300C3381C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB2583F0238D8A9300C3381C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ8H6PMQ82;
+				INFOPLIST_FILE = GrandmasCookbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uwstout.GrandmasCookbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AB2583F1238D8A9300C3381C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ8H6PMQ82;
+				INFOPLIST_FILE = GrandmasCookbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uwstout.GrandmasCookbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		AB2583F3238D8A9300C3381C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrandmasCookbookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrandmasCookbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrandmasCookbook.app/GrandmasCookbook";
+			};
+			name = Debug;
+		};
+		AB2583F4238D8A9300C3381C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrandmasCookbookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrandmasCookbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrandmasCookbook.app/GrandmasCookbook";
+			};
+			name = Release;
+		};
+		AB2583F6238D8A9300C3381C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrandmasCookbookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrandmasCookbookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrandmasCookbook;
+			};
+			name = Debug;
+		};
+		AB2583F7238D8A9300C3381C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrandmasCookbookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GrandmasCookbookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrandmasCookbook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB2583BD238D8A9300C3381C /* Build configuration list for PBXProject "GrandmasCookbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2583ED238D8A9300C3381C /* Debug */,
+				AB2583EE238D8A9300C3381C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2583EF238D8A9300C3381C /* Build configuration list for PBXNativeTarget "GrandmasCookbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2583F0238D8A9300C3381C /* Debug */,
+				AB2583F1238D8A9300C3381C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2583F2238D8A9300C3381C /* Build configuration list for PBXNativeTarget "GrandmasCookbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2583F3238D8A9300C3381C /* Debug */,
+				AB2583F4238D8A9300C3381C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2583F5238D8A9300C3381C /* Build configuration list for PBXNativeTarget "GrandmasCookbookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2583F6238D8A9300C3381C /* Debug */,
+				AB2583F7238D8A9300C3381C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB2583CE238D8A9300C3381C /* GrandmasCookbook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB2583CF238D8A9300C3381C /* GrandmasCookbook.xcdatamodel */,
+			);
+			currentVersion = AB2583CF238D8A9300C3381C /* GrandmasCookbook.xcdatamodel */;
+			path = GrandmasCookbook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AB2583BA238D8A9300C3381C /* Project object */;
+}
