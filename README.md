@@ -1,2 +1,4 @@
 # grandma-s-cookbook
-IOS Cookbook App
+IOS Cookbook App -
+Alayna Shaw -
+April 2019
